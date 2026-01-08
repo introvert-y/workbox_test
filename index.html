@@ -77,7 +77,8 @@
       } else {
         // 生产模式注册 SW
         registerSW({
-          swPath: '/sw.js',
+          swPath: import.meta.env.BASE_URL + 'sw.js',
+          scope: import.meta.env.BASE_URL,
           onSuccess: (reg) => {
             statusEl.className = 'status success';
             statusEl.textContent = 'Service Worker: Registered';

@@ -3,6 +3,8 @@
 基于官方 Workbox 的最小可行性 PWA Demo，可直接迁移使用。通过 npm run build && npm run preview
 查看效果
 
+**在线演示**: [https://introvert-y.github.io/workbox_test/](https://introvert-y.github.io/workbox_test/)
+
 ## 快速开始
 
 ```bash
