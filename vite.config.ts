@@ -6,6 +6,11 @@ import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
 
 export default defineConfig({
+  // GitHub Pages 部署配置
+  base: process.env.GITHUB_REPOSITORY
+    ? `/${process.env.GITHUB_REPOSITORY.split('/')[1]}/`
+    : '/',
+
   plugins: [
     VitePWA({
       // 使用 injectManifest 模式，允许自定义 SW 逻辑
